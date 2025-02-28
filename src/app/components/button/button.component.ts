@@ -10,8 +10,8 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class ButtonComponent {
 
-  @Input() type: 'primary' | 'secondary' | 'aux' | 'color-mode' = 'primary';
-  @Input() label: string = 'Button';
+  @Input() type: 'primary' | 'secondary' | 'aux' | 'icon' = 'primary';
+  @Input() label: string = '';
   @Input() iconName?: string;
 
   @Output() onClick = new EventEmitter<void>();

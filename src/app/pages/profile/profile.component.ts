@@ -3,16 +3,20 @@ import { ThemeService } from '../../services/theme.service';
 import { ButtonComponent } from '../../components/button/button.component';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
+import { ProgressBarComponent } from '../../components/progress-bar/progress-bar.component';
+import { SettingsComponent } from '../settings/settings.component';
 
 @Component({
   selector: 'app-profile',
-  imports: [ButtonComponent, CommonModule, MatIconModule, NgOptimizedImage],
+  imports: [ButtonComponent, CommonModule, MatIconModule, NgOptimizedImage, ProgressBarComponent, SettingsComponent],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.scss'
 })
 export class ProfileComponent {
+  isOpen = false;
 
   perfil: WritableSignal<any> = signal<any>(null);
+  
 
   constructor(private themeService: ThemeService) {
   this.perfil.set({nome: 'Douglas Emiliano', email: 'emaildedouglas@gmail.com', foto: 'assets/lion.png', 
@@ -30,6 +34,18 @@ export class ProfileComponent {
       ]  }
     );
   }
+
+  closeCard() {
+    console.log("entrou no closeCard");
+    this.isOpen = false; // Fecha o card quando recebe o evento
+  }
+
+  toggleCard() {
+    this.isOpen = !this.isOpen;
+    console.log(this.isOpen);
+    
+  }
+
   getTheme() {
     return this.themeService.getTheme();
   }

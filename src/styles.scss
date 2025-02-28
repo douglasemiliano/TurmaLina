@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 :root {
     --font-family: montserrat, sans-serif;
     --font-family-heading: 'Poppins', sans-serif; /* Fonte específica para os títulos */
@@ -62,6 +64,7 @@ p {
     font-weight: var(--font-weight-normal); /* Peso normal */
     font-size: 1rem; /* Tamanho de texto padrão */
     line-height: 1.5;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {

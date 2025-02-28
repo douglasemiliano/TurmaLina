@@ -10,7 +10,7 @@ import { BottomBarComponent } from './components/bottom-bar/bottom-bar.component
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MatTabsModule, ProfileComponent, ButtonComponent, MatIconModule, BottomBarComponent],
+  imports: [RouterOutlet, MatTabsModule, MatIconModule, BottomBarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

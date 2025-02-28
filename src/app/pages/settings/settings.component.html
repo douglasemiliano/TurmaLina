@@ -1,0 +1,21 @@
+<!-- <app-button type="icon" label="" iconName="settings" (click)="toggleCard()"></app-button> -->
+
+<!-- <div class="overlay" [class.show]="isOpen">
+    <div class="close-button">
+        <app-button type="icon" iconName="close" (click)="closeCard()"></app-button>
+    </div>
+    <div class="card">
+      <h2>Card de Tela Cheia</h2>
+      <p>Este é um card animado vindo da direita para a esquerda.</p>
+    </div>
+  </div>
+   -->
+
+   <div class="card" [class.show]="isOpen">
+    <div class="close-button">
+        <app-button type="icon" iconName="close" (click)="closeCard()"></app-button>
+    </div>
+    <h2>Meu Card</h2>
+    <p>Este é um card que entra e sai da tela.</p>
+  </div>
+  
