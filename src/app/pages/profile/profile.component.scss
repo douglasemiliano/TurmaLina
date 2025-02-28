@@ -1,0 +1,154 @@
+
+.perfil-container {
+    
+    & .color-mode{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    margin: auto;
+    height: 70vh;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        & app-button{
+            display: flex;
+            justify-content: end;
+        }
+
+        & .badges-container{
+            justify-content: center;
+        }
+
+             }
+
+    & app-button{
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+  .perfil-info {
+    margin-bottom: 20px;
+  }
+  
+  .foto-perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    background-color: #f0f0f0;
+  }
+  
+//   h2 {
+//     font-size: 1.5rem;
+//     margin: 10px 0;
+//   }
+  
+  p {
+    margin-top: -0px;
+  }
+  
+  .badges-container {
+    text-align: center;
+    margin-top: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 3rem;
+
+    :nth-child(n){
+        margin: 0.3rem;
+    }
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .badges-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .badges-container::-webkit-scrollbar {
+    width: 0.3rem;
+  }
+
+  .badges-container::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+  }
+  
+  .badge {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px !important;
+    background: var(--gradient-primary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 1.5rem;
+  }
+  
+  .badge:hover {
+    transform: scale(1.1);
+  }
+  
+  .badge-tooltip {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-60%);
+    white-space: nowrap;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: var(--font-weight-bold);
+  }
+  
+  .badge:hover .badge-tooltip {
+    visibility: visible;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 480px) {
+    .badges-list {
+      gap: 5px;
+    }
+    .badge {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+    }
+  }
+  

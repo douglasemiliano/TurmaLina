@@ -1,0 +1,10 @@
+<button [class]="type" (click)="clickEmitter()">
+    @if(iconName) {
+        <mat-icon>{{ iconName }}</mat-icon> <!-- Exibe o ícone se o nome for fornecido -->
+    }
+
+    @if(label) {
+        <span>{{ label }}</span>
+    }
+  </button>
+  
