@@ -49,3 +49,13 @@ button {
     color: white;
   }
   
+  .icon-fade mat-icon {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .icon-fade.mat-icon.ng-animating {
+    opacity: 1;
+    transform: scale(1);
+  }

@@ -1,2 +1,3 @@
-<!-- app.component.html -->
-<button class="toggle" id="theme-toggle" (click)="toggleTheme()">Switch Theme</button>
+<button class="toggle-button" (click)="toggleTheme()" >
+    <mat-icon [class]="getTheme() === 'dark-theme' ? 'move-right' : 'move-left'">{{ getTheme() === 'dark-theme' ? 'nights_stay' : 'wb_sunny' }}</mat-icon>
+</button>

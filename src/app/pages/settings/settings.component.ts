@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { ButtonComponent } from '../../components/button/button.component';
+import { ThemeService } from '../../services/theme.service';
 
 
 @Component({
@@ -11,7 +12,20 @@ import { ButtonComponent } from '../../components/button/button.component';
 })
 export class SettingsComponent implements OnChanges {
   @Input() isOpen: boolean = true; // Controla a exibição do card
-  @Output() close = new EventEmitter<void>();
+  @Output() close = new EventEmitter<void>(); isDarkTheme = false;
+
+  constructor(private themeService: ThemeService)
+   {
+
+  }
+
+  toggleTheme() {
+    this.themeService.toggleTheme();
+  }
+
+  getTheme() {
+    return this.themeService.getTheme();
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['isOpen']) {

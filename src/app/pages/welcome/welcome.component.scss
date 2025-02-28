@@ -1,0 +1,23 @@
+.toggle-button {
+  background: var(--primary-color) !important;
+  border: 2px solid var(--primary-color-dark) !important;
+  color: var(--text-secondary) !important;
+  border-radius: 30px;
+  width: 70px;
+  height: 30px;  
+
+  & mat-icon {
+    font-size: 25px;
+  }
+}
+
+.move-right {
+  transform: translateX(15px); /* Move o ícone para a direita */
+  transition: transform 0.3s ease; /* Movimento suave */
+}
+
+.move-left {
+  transform: translateX(-15px); /* Move o ícone para a esquerda */
+  transition: transform 0.3s ease; /* Movimento suave */
+}
+

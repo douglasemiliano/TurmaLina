@@ -13,6 +13,9 @@
 
    <div class="card" [class.show]="isOpen">
     <div class="close-button">
+        <button class="toggle-button" (click)="toggleTheme()" >
+            <mat-icon [class]="getTheme() === 'dark-theme' ? 'move-right' : 'move-left'">{{ getTheme() === 'dark-theme' ? 'nights_stay' : 'wb_sunny' }}</mat-icon>
+        </button>
         <app-button type="icon" iconName="close" (click)="closeCard()"></app-button>
     </div>
     <h2>Meu Card</h2>
