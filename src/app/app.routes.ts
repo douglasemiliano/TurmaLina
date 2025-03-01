@@ -6,6 +6,7 @@ import { SettingsComponent } from './pages/settings/settings.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 export const routes: Routes = [
-    {path: 'perfil', component: ProfileComponent},
-    {path: 'botao', component: WelcomeComponent},
+    {path: 'perfil', loadComponent: () => import('./pages/profile/profile.component').then(m => m.ProfileComponent)},
+    {path: 'botao', loadComponent: () => import('./pages/welcome/welcome.component').then(m => m.WelcomeComponent)},
+    {path: 'cursos', loadComponent: () => import('./pages/curso/listar-curso/listar-curso.component').then(m => m.ListarCursoComponent)},
 ];

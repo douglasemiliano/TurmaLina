@@ -2,11 +2,11 @@ import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from
 import { MatIconModule } from '@angular/material/icon';
 import { ButtonComponent } from '../../components/button/button.component';
 import { ThemeService } from '../../services/theme.service';
-
+import { ToggleButtonComponent } from '../../components/toggle-button/toggle-button.component';
 
 @Component({
   selector: 'app-settings',
-  imports: [MatIconModule, ButtonComponent],
+  imports: [MatIconModule, ButtonComponent, ToggleButtonComponent],
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.scss'
 })

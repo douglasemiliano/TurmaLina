@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
     --font-family: montserrat, sans-serif;
@@ -14,6 +15,7 @@
     --primary-color-dark: #012c4b;  
     --secondary-color: #006699;  
     --background-color: #dcdcfe; 
+    --background-color-inverse: #0e0e46;
     --background-color-dark: #b9b9e4; 
     --text-primary: #161e55;
     --text-secondary: white;
@@ -31,6 +33,7 @@
     --primary-color-dark: #5a9bca;  
     --secondary-color: #66ccff;  
     --background-color: #010123; 
+    --background-color-inverse: #b9b9e4; 
     --background-color-dark: #0e0e46;
     --text-primary: white;
     --text-secondary: #161e55;

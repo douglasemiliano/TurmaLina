@@ -1,0 +1,46 @@
+.toggle-button {
+    border-radius: 30px;
+    width: 70px;
+    height: 30px;
+    & mat-icon {
+      font-size: 25px;
+    }
+  }
+  
+  .move-right {
+    transform: translateX(15px); /* Move o ícone para a direita */
+    transition: transform 0.3s ease; /* Movimento suave */
+  }
+  
+  .move-left {
+    transform: translateX(-15px); /* Move o ícone para a esquerda */
+    transition: transform 0.3s ease; /* Movimento suave */
+  }
+
+  .primary {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--text-secondary);
+  }
+  
+  .secondary {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    color: white;
+  }
+
+  
+  .aux {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: transparent;
+  }
+
+  .accent {
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+
+  
+  
