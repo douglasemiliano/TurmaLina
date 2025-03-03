@@ -1,0 +1,7 @@
+<div class="trilha">
+    <div *ngFor="let atividade of atividades; let i = index" [ngClass]="getPositionClass(i)">
+      <app-activity-button type="primary" [label]="atividade.nome" iconName="verified"></app-activity-button>
+      <h6 class="atividade-nome">{{ atividade.nome }}</h6>
+    </div>
+  </div>
+  

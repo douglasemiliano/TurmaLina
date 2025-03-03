@@ -1,0 +1,11 @@
+<div class="button-container">
+    <div class="pixel-shadow"></div>
+    <button class="pixel-button" (click)="clickEmitter()">
+        <!-- <mat-icon>error_outline</mat-icon> -->
+        <mat-icon>
+            @if(iconName) {
+                {{ iconName }}
+            }
+        </mat-icon>
+    </button>
+</div>

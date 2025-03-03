@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
+import { CursoService } from '../../../services/curso.service';
 
 @Component({
   selector: 'app-listar-curso',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './listar-curso.component.html',
   styleUrl: './listar-curso.component.scss'
 })
 export class ListarCursoComponent {
+
+  private router = inject(Router);
+  private cursoService = inject(CursoService);
+  
 
   cursos = [{id: 1, nome: "Matemática", section: "1", descricao: "Um curso de matemática voltado para gamificação", codigoAcesso: "1234567890", status: "ACTIVE"}, 
     {id: 2, nome: "Português", section: "2", descricao: "Um curso de português voltado para pratica de redação", codigoAcesso: "1234567890", status: "ACTIVE"}, 
@@ -16,7 +22,12 @@ export class ListarCursoComponent {
     {id: 6, nome: "Química", section: "6", descricao: "Um curso de química voltado para a química orgânica", codigoAcesso: "1234567890", status: "ACTIVE"  }]
 
   entrarNoCurso(curso: any) {
-    console.log(curso);
+    this.router.navigate(['/cursos', curso.id]);
+    this.setCursoAtual(curso);
+  }
+
+  setCursoAtual(curso: any) {
+    this.cursoService.setCursoAtual(curso);
   }
 
 }

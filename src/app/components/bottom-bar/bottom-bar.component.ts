@@ -13,7 +13,7 @@ export class BottomBarComponent {
   private router = inject(Router);
 
   isActive(path: string) {
-    return this.router.url === path;
+    return this.router.url === path || this.router.url.includes(path);
   }
 
   goTo(path: string) {
