@@ -1,11 +1,8 @@
 <div class="button-container">
-    <div class="pixel-shadow"></div>
-    <button class="pixel-button" (click)="clickEmitter()">
+    <button class="pixel-button" (click)="clickEmitter()" [class]="type" [class.click]="isClicked" [disabled]="isDisabled == 'true'" [class.disabled]="isDisabled == 'true'">
         <!-- <mat-icon>error_outline</mat-icon> -->
         <mat-icon>
-            @if(iconName) {
-                {{ iconName }}
-            }
+            {{ isDisabled == 'true' ? 'info_outline' : iconName }}
         </mat-icon>
     </button>
 </div>

@@ -16,7 +16,16 @@ export class ListarAtividadeComponent {
   cursoAtual = this.cursoService.getCursoAtual();
 
   currentStep: number = 0; // Para controlar o progresso da trilhas
-  atividades = [{id: 1, nome: "Apresentação", status: "concluido"}, {id: 2, nome: "Leitura digidia", status: "concluido"}, {id: 3, nome: "Produzir Artigo", status: "concluido"}, {id: 4, nome: "Seminário Design Thinking", status: "concluido"}, {id: 5, nome: "Projeto de Vida", status: "concluido"}];
+  atividades = [{id: 1, nome: "Apresentação", status: "concluido"}, 
+      {id: 2, nome: "Leitura dirigida", status: "concluido"}, 
+      {id: 3, nome: "Produzir Artigo", status: "atribuida"},
+      {id: 4, nome: "Seminário Design Thinking", status: "atribuida"}, 
+      {id: 5, nome: "Projeto de Vida", status: "concluido"},
+      {id: 6, nome: "Atividade 6", status: "atribuida"},
+      {id: 7, nome: "Atividade 7", status: "concluido"},
+      {id: 8, nome: "Atividade 8", status: "atribuida"},
+      {id: 9, nome: "Atividade 9", status: "concluido"},
+      {id: 10, nome: "Atividade 10", status: "atribuida"}];
 
   getPositionClass(index: number): string {
     const positions = ['item-left', 'item-middle', 'item-right', 'item-middle']; 

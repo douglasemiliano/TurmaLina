@@ -23,10 +23,10 @@
     // --accent-color: #ff9933;
     --accent-color: #cc6600;
     --accent-color-dark: #994d00;
+    --accent-color-darker: #592d00;
     --gradient-primary: linear-gradient(135deg, #004577, #006699);
     --gradient-secondary: linear-gradient(135deg, #ff9933, #ffc266);
-
-
+    --text: #282929;
 }
 
 /* Tema Escuro */
@@ -38,11 +38,13 @@
     --background-color: #010123; 
     --background-color-inverse: #b9b9e4; 
     --background-color-dark: #0e0e46;
+    --text: white;
     --text-primary: white;
     --text-secondary: #161e55;
     // --accent-color: #cc6600;
     --accent-color: #ff9933;
     --accent-color-dark: #ca6601;
+    --accent-color-darker: #804d00;
     --gradient-primary: linear-gradient(135deg, #ff9933, #ffc266);
     --gradient-secondary: linear-gradient(135deg, #004577, #006699);
 

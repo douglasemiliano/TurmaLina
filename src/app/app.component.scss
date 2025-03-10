@@ -16,7 +16,7 @@ html, body {
   
   app-bottom-bar {
     height: 64px;
-    background: #ccc;
+    background: var(--background-color);
     flex-shrink: 0; /* Evita que o bottom bar seja redimensionado */
   }
   

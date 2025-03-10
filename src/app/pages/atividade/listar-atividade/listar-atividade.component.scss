@@ -57,8 +57,27 @@
   .atividade-nome {
     margin-top: 5px;
     font-weight: bold;
-    color: var(--text-primary);
     text-align: center;
     margin-top: 8px;
+    color: var(--text);
+  }
+
+  .accent {
+    color: var(--accent-color);
+  }
+
+  .primary {
+    color: var(--text-primary);
+  }
+
+  .secondary {
+    color: var(--text-secondary);
+  }
+
+  .clicked {
+    transform: translatey(2px); /* Move o ícone para a direita */
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+
   }
   
